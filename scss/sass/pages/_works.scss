@@ -27,13 +27,8 @@
          margin-left: 0.5rem;
          @include transition(all .3s ease-in-out);
          &.active {
-<<<<<<< HEAD
-            background-color: $orangeColor;
-            border: 1.8px solid $orangeColor;
-=======
             background-color: $mainColor;
             border: 1.8px solid $mainColor;
->>>>>>> 527a2ce (costomazation and some chnges)
          }
       }
    }
@@ -44,14 +39,6 @@
       .work-img {
          position: relative;
          overflow: hidden;
-<<<<<<< HEAD
-         @include transition(opacity .3s ease-in-out);
-         &.hide {
-            opacity: 0.1;
-         }
-         img {
-            @include transition(transform .4s ease-in-out);
-=======
          @include transition(all .4s ease-in-out);
          &.hide {
             opacity: 0.1;
@@ -63,7 +50,6 @@
          }
          img {
             @include transition(transform .3s ease-in-out);
->>>>>>> 527a2ce (costomazation and some chnges)
          }
          &:hover {
             .overlay {
@@ -77,18 +63,6 @@
          .overlay {
             opacity: 0;
             visibility: hidden;
-<<<<<<< HEAD
-            background-color: rgba(227,114,34,0.85);
-            color: #fff;
-            @include transition(all .4s ease-in-out);
-            .icon {
-               margin: 21% 0 15% ;
-               height: 50px;
-               width: 50px;
-               border: 1.5px solid #111;
-               line-height: 40px;
-               border-radius: 50%;
-=======
             background-color: rgba(255,195,11,.85);
             color: #fff;
             display: flex;
@@ -103,28 +77,20 @@
                line-height: 49px;
                border-radius: 50%;
                margin-top: 10%;
->>>>>>> 527a2ce (costomazation and some chnges)
             }
             .line {
                display: block;
                width: 30%;
                height: 3px;
-<<<<<<< HEAD
-               background-color: #111;
-=======
                background-color: #fff;
->>>>>>> 527a2ce (costomazation and some chnges)
                margin: auto;
             }
             .work-name {
                text-transform: capitalize;
             }
-<<<<<<< HEAD
-=======
             .work-desc {
                font-size: 14px;
             }
->>>>>>> 527a2ce (costomazation and some chnges)
          }
       }
    }
@@ -150,11 +116,8 @@
          display: block;
          .work-img {
             margin-bottom: 0.7rem;
-<<<<<<< HEAD
-=======
             width: 80%;
             margin: auto;
->>>>>>> 527a2ce (costomazation and some chnges)
          }
       }
    }

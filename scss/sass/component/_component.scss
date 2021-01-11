@@ -15,11 +15,7 @@
       margin: auto;
       width: 6rem;
       height: 5px;
-<<<<<<< HEAD
-      background-color: $blueColor;
-=======
       background-color: $subColor;
->>>>>>> 527a2ce (costomazation and some chnges)
    }
 }
 
@@ -37,11 +33,7 @@
    .head-line {
       display: block;
       height: 5px;
-<<<<<<< HEAD
-      background-color: $blueColor;
-=======
       background-color: $subColor;
->>>>>>> 527a2ce (costomazation and some chnges)
    }
 }
 
@@ -113,11 +105,7 @@
    z-index: 2;
    border-top-left-radius: 60px;
    border-bottom-right-radius: 60px;
-<<<<<<< HEAD
-   background-color: $orangeColor;
-=======
    background-color: $mainColor;
->>>>>>> 527a2ce (costomazation and some chnges)
    @include transition(all .3s ease-in-out);
 }
 
@@ -141,11 +129,7 @@
       left: 0;
       height: 100%;
       width: 0;
-<<<<<<< HEAD
-      background-color: $orangeColor-alt;
-=======
       background-color: $mainColor-alt;
->>>>>>> 527a2ce (costomazation and some chnges)
       z-index: 2;
       @include transition(width .3s ease-in-out);
    }

@@ -66,11 +66,7 @@ $(window).scroll(function() {
 //3. Silder`
 //3.1 - Slider content animation
 $(window).on("DOMContentLoaded", function () {
-<<<<<<< HEAD
-   $(".slider-text , .slider-btn").css({
-=======
    $(".slider-text , .slider-btn, .slider-img").css({
->>>>>>> 527a2ce (costomazation and some chnges)
       transform : "translate(0)",
       opacity : "1"
    });
@@ -162,26 +158,17 @@ $(".works-list .works-list-item").on("click", function() {
    $(this).addClass("active").siblings().removeClass("active");
    if (type === "all") {
       if (vw < 576) {
-<<<<<<< HEAD
-         image.fadeIn();
-=======
          image.removeClass("popOut");
          setTimeout(function() {image.show()}, 400)
->>>>>>> 527a2ce (costomazation and some chnges)
       }else {
          image.removeClass("hide");
       }
    }else {
       if (vw < 576) {
-<<<<<<< HEAD
-         image.hide();
-         $(`.work-content .${type}`).fadeIn();
-=======
          image.addClass("popOut");
          setTimeout(function() {image.hide()}, 400);
          $(`.work-content .${type}`).removeClass("popOut");
          setTimeout(function() {$(`.work-content .${type}`).show()}, 400)
->>>>>>> 527a2ce (costomazation and some chnges)
       }else {
          image.addClass("hide");
          $(`.work-content .${type}`).removeClass("hide");

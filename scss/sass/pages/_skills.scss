@@ -13,11 +13,7 @@
             background-color: #fff;
             overflow: hidden;
             position: relative;
-<<<<<<< HEAD
-            border: 2px solid $orangeColor;
-=======
             border: 2px solid $mainColor;
->>>>>>> 527a2ce (costomazation and some chnges)
             .progress-rate {
                position: absolute;
                top: 0;
@@ -28,19 +24,11 @@
                color: #fff;
                line-height: 20px;
                font-size: 13px;
-<<<<<<< HEAD
-               background-color: $orangeColor;
-            }
-         }
-         .blue {
-            border: 1px solid $orangeColor;
-=======
                background-color: $mainColor;
             }
          }
          .blue {
             border: 1px solid $mainColor;
->>>>>>> 527a2ce (costomazation and some chnges)
             .progress-rate {
                
             }
@@ -48,23 +36,15 @@
       }
    }
    .tools-content {
-<<<<<<< HEAD
-      margin: 0;
-=======
       padding: 5px 20px;
       margin: 0;
       
->>>>>>> 527a2ce (costomazation and some chnges)
       .tools {
          display: grid;
          grid-template-columns: repeat(4,1fr);
          justify-content: center;
          grid-gap: 30px;
          padding: 10px 30px 0;
-<<<<<<< HEAD
-      }
-   }
-=======
          .tool {
             img {
                object-fit: contain;
@@ -80,5 +60,4 @@
    #skills .tools-content {
       padding: 5px 50px;
    }
->>>>>>> 527a2ce (costomazation and some chnges)
 }

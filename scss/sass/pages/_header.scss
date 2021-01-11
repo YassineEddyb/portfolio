@@ -24,22 +24,12 @@ header {
       a {
          span {
             font-size: 1.7rem;
-<<<<<<< HEAD
-         }
-         span:first-child {
-            color: $blueColor;
-            font-weight: bold;
-         }
-         span:last-child {
-            color: $orangeColor;
-=======
             color: $mainColor;
             font-weight: bold;
             span {
                font-size: 1.1rem;
                color: $subColor;
             }
->>>>>>> 527a2ce (costomazation and some chnges)
          }
       }
    }
@@ -65,31 +55,19 @@ header {
                   left: 0;
                   height: 4px;
                   width: 0;
-<<<<<<< HEAD
-                  background-color: $orangeColor;
-=======
                   background-color: $subColor;
->>>>>>> 527a2ce (costomazation and some chnges)
                   @include transition((width .3s ease-in-out, color .3s ease-in-out));
                }
             }
             .mobile.active, .mobile:hover {
-<<<<<<< HEAD
-               color: $orangeColor;
-=======
                color: $subColor;
->>>>>>> 527a2ce (costomazation and some chnges)
             }
             .laptop.active:before,
             .laptop:hover:before,
             .laptop.active,
             .laptop:hover{
                width: 100%;
-<<<<<<< HEAD
-               color: $orangeColor;
-=======
                color: $subColor;
->>>>>>> 527a2ce (costomazation and some chnges)
             }
          }
       }
