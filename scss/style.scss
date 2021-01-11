@@ -1,0 +1,17 @@
+
+@import "sass/var/variables";
+
+@import "sass/mixins/vendor-prefixes";
+@import "sass/breakpoints/breakpoints";
+@import "sass/common/common";
+@import "sass/component/component";
+
+@import "sass/pages/header";
+@import "sass/pages/slider";
+@import "sass/pages/about";
+@import "sass/pages/services";
+@import "sass/pages/skills";
+@import "sass/pages/works";
+@import "sass/pages/testimonial";
+@import "sass/pages/contact-me";
+@import "sass/pages/footer";

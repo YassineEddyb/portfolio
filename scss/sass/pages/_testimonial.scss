@@ -1,0 +1,45 @@
+#testimonial {
+   .testimonial-content {
+      .testimonial-item {
+         position: relative;
+         padding: 0.7rem;
+         width: 90%;
+         margin: auto;
+         margin-bottom: 20px;
+         border-top: 2px solid #ddd;
+         border-left: 2px solid #ddd;
+         @include box-shadow(5px 5px 20px rgba(0,0,0,0.2));
+         .person-img {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 15px;
+            left: 8px;
+         }
+         .person {
+            margin-left: 65px;
+            .person-name {
+               text-transform: capitalize;
+               margin-bottom: 0;
+<<<<<<< HEAD
+               color: $blueColor;
+            }
+            .person-job {
+               text-transform: capitalize;
+               color: $orangeColor;
+=======
+               color: $subColor;
+            }
+            .person-job {
+               text-transform: capitalize;
+               color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+            }
+            .person-comment {
+               font-size: 15px;
+               color: #666;
+            }
+         }
+      }
+   }
+}

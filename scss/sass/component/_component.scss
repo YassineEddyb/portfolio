@@ -1,0 +1,155 @@
+/* heading */
+.head-center {
+   text-align: center;
+   margin-bottom: 3.5rem;
+   .head-title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      span {
+         font-weight: normal;
+         color: #666;
+      }
+   }
+   .head-line {
+      display: block;
+      margin: auto;
+      width: 6rem;
+      height: 5px;
+<<<<<<< HEAD
+      background-color: $blueColor;
+=======
+      background-color: $subColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+   }
+}
+
+.head {
+   display: inline-block;
+   margin-bottom: 2rem;
+   .head-title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      span {
+         font-weight: normal;
+         color: #666;
+      }
+   }
+   .head-line {
+      display: block;
+      height: 5px;
+<<<<<<< HEAD
+      background-color: $blueColor;
+=======
+      background-color: $subColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+   }
+}
+
+@include media-breakpoint-down(sm) {
+   .head-center, .head {
+      margin-bottom: 2.5rem;
+      .head-title {
+         font-size: 1.7rem;
+      }
+   }
+}
+
+/* overlay */
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(12,12,23,0.8);
+}
+
+/* overlay effect */
+.overlay-effect {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(12,12,23,0.8);
+   visibility: hidden;
+   opacity: 0;
+   @include transition(all 0.3s ease-in-out);
+   .social-media {
+      @include transition(margin 0.3s ease-in-out);
+      li {
+         display: inline-block;
+         a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+               background-color: transparent;
+               i {
+                  color: #fff;
+               }
+            }
+            i {
+               color: #000;
+               font-size: 1.5rem;
+               line-height: 33px;
+            }
+         }
+      }
+   }
+}
+
+/* fill effect*/
+.fill-effect {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 0;
+   height: 0;
+   z-index: 2;
+   border-top-left-radius: 60px;
+   border-bottom-right-radius: 60px;
+<<<<<<< HEAD
+   background-color: $orangeColor;
+=======
+   background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+   @include transition(all .3s ease-in-out);
+}
+
+/* button effect */
+.btn-effect {
+   display: inline-block;
+   position: relative;
+   button {
+      position: relative;
+      z-index: 3;
+      background-color: transparent;
+      display: block;
+      border: 0;
+      color: #fff;
+      @include transition(color .3s ease-in-out);
+   }
+   &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+<<<<<<< HEAD
+      background-color: $orangeColor-alt;
+=======
+      background-color: $mainColor-alt;
+>>>>>>> 527a2ce (costomazation and some chnges)
+      z-index: 2;
+      @include transition(width .3s ease-in-out);
+   }
+   &:hover:before {
+      width: 100%;
+   }
+}

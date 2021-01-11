@@ -1,0 +1,58 @@
+.contact-me {
+<<<<<<< HEAD
+   background-color: $orangeColor;
+=======
+   background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+   height: 220px;
+   .contact-desc {
+      color: #fff;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      font-weight: 500;
+   }
+   .contact-link {
+      border: 2px solid #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+   }
+}
+
+#contact {
+   form {
+      max-width: 900px;
+      margin: auto;
+      input,textarea {
+         padding: 0.5rem 0.7rem;
+         width: 100%;
+         border: 2.5px solid #d3d3d3;
+         margin-bottom: 0.5rem;
+         border-radius: 8px;
+<<<<<<< HEAD
+=======
+         outline: none;
+         &:focus {
+            border-color: $subColor;
+         }
+>>>>>>> 527a2ce (costomazation and some chnges)
+      }
+      textarea {
+         height: 120px;
+      }
+      .contact-btn {
+<<<<<<< HEAD
+         background-color: $orangeColor;
+=======
+         background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+         font-weight: 600;
+         display: block;
+         max-width: 500px;
+         margin: auto;
+         button {
+            display: block;
+            width: 100%;
+         }
+      }
+   }
+}

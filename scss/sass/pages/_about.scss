@@ -1,0 +1,33 @@
+#about {
+   .about-info {
+      .about-btn {
+<<<<<<< HEAD
+         background-color: $orangeColor;
+=======
+         background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+         &:hover {
+            &:before {
+               width: 100%;
+            }
+         }
+      }
+   }
+   .about-img {
+      position: relative;
+      margin: auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      &:hover {
+         .overlay-effect {
+            opacity: 1;
+            visibility: visible;
+            .social-media {
+               margin: 0;
+            }
+         }
+      }
+   }
+}

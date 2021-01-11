@@ -1,0 +1,91 @@
+#services{
+   background-image: url("../img/services/services-bg.jpg");
+   @include background-size(cover);
+   background-attachment: fixed;
+   position: relative;
+   overflow: hidden;
+   .head-center {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      span {
+         color: #ddd;
+      }
+   }
+   .service-item {
+      text-align: center;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      position: relative;
+      border-top-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      overflow: hidden;
+      opacity: 0;
+      @include transition(all 1s ease-in-out);
+      .service-item-content {
+         position: relative;
+         z-index: 4;
+         .icon {
+            width: 70px;
+            height: 70px;
+            line-height: 63px;
+            border-radius: 50%;
+            color: #fff;
+            margin-top: 20px;
+<<<<<<< HEAD
+            background-color: $orangeColor;
+=======
+            background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+            @include transition(all .3s ease-in-out);
+         }
+         .service-item-title {
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            margin: 1.7rem 0 0.7rem;
+            @include transition(color .3s ease-in-out);
+         }
+         p {
+            color: #777;
+            @include transition(color .3s ease-in-out);
+         }
+      }
+      &:hover {
+         .fill-effect {
+            width: 100%;
+            height: 100%;
+         }
+         .service-item-content {
+            .icon {
+               background-color: #fff;
+               color: #000;
+            }
+            .service-item-title, p {
+               color: #eee;
+            }
+         }
+      }
+   }
+}
+
+@include media-breakpoint-down(xs) {
+   #services .service-item.one,
+   #services .service-item.three {
+      @include transform(translateX(-100%));
+   }
+   #services .service-item.two {
+      @include transform(translateX(100%));
+   }
+}
+
+@include media-breakpoint-up(sm) {
+   #services .service-item.one {
+      @include transform(translateX(-100%));
+   }
+   #services .service-item.two {
+      @include transform(translateX(150%));
+   }
+   #services .service-item.three {
+      @include transform(translateY(100%));
+   }
+}

@@ -1,0 +1,161 @@
+#works {
+   position: relative;
+   background-image: url("../img/works/works-bg.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   @include background-size(cover);
+   background-attachment: fixed;
+   .head-center {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      span {
+         color: #ddd;
+      }
+   }
+   .works-list {
+      position: relative;
+      z-index: 3;
+      .works-list-item {
+         display: inline-block;
+         color: #ddd;
+         border: 1.8px solid #ddd;
+         padding: 0.4rem 0.9rem;
+         font-size: 14px;
+         text-transform: uppercase;
+         margin-bottom: 0.8rem;
+         margin-left: 0.5rem;
+         @include transition(all .3s ease-in-out);
+         &.active {
+<<<<<<< HEAD
+            background-color: $orangeColor;
+            border: 1.8px solid $orangeColor;
+=======
+            background-color: $mainColor;
+            border: 1.8px solid $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+         }
+      }
+   }
+   .work-content {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 0.7rem;
+      .work-img {
+         position: relative;
+         overflow: hidden;
+<<<<<<< HEAD
+         @include transition(opacity .3s ease-in-out);
+         &.hide {
+            opacity: 0.1;
+         }
+         img {
+            @include transition(transform .4s ease-in-out);
+=======
+         @include transition(all .4s ease-in-out);
+         &.hide {
+            opacity: 0.1;
+         }
+         &.popOut {
+            transform: scale(0);
+            opacity: 0;
+            visibility: hidden;
+         }
+         img {
+            @include transition(transform .3s ease-in-out);
+>>>>>>> 527a2ce (costomazation and some chnges)
+         }
+         &:hover {
+            .overlay {
+               opacity: 1;
+               visibility: visible;
+            }
+            img {
+               @include transform(scale(1.2));
+            }
+         }
+         .overlay {
+            opacity: 0;
+            visibility: hidden;
+<<<<<<< HEAD
+            background-color: rgba(227,114,34,0.85);
+            color: #fff;
+            @include transition(all .4s ease-in-out);
+            .icon {
+               margin: 21% 0 15% ;
+               height: 50px;
+               width: 50px;
+               border: 1.5px solid #111;
+               line-height: 40px;
+               border-radius: 50%;
+=======
+            background-color: rgba(255,195,11,.85);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            @include transition(all .4s ease-in-out);
+            .icon {
+               height: 50px;
+               width: 50px;
+               border: 1.5px solid #fff;
+               line-height: 49px;
+               border-radius: 50%;
+               margin-top: 10%;
+>>>>>>> 527a2ce (costomazation and some chnges)
+            }
+            .line {
+               display: block;
+               width: 30%;
+               height: 3px;
+<<<<<<< HEAD
+               background-color: #111;
+=======
+               background-color: #fff;
+>>>>>>> 527a2ce (costomazation and some chnges)
+               margin: auto;
+            }
+            .work-name {
+               text-transform: capitalize;
+            }
+<<<<<<< HEAD
+=======
+            .work-desc {
+               font-size: 14px;
+            }
+>>>>>>> 527a2ce (costomazation and some chnges)
+         }
+      }
+   }
+}
+
+@include media-breakpoint-down(md) {
+   #works {
+      .work-content {
+         grid-template-columns: repeat(3,1fr);
+      }
+   }
+}
+@include media-breakpoint-down(sm) {
+   #works {
+      .work-content {
+         grid-template-columns: repeat(2,1fr);
+      }
+   }
+}
+@include media-breakpoint-down(xs) {
+   #works {
+      .work-content {
+         display: block;
+         .work-img {
+            margin-bottom: 0.7rem;
+<<<<<<< HEAD
+=======
+            width: 80%;
+            margin: auto;
+>>>>>>> 527a2ce (costomazation and some chnges)
+         }
+      }
+   }
+}

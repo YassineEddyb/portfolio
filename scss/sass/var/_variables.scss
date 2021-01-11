@@ -1,0 +1,22 @@
+/* colors */
+<<<<<<< HEAD
+$blueColor: #07889B;
+$blueColor-alt: #6689BF;
+
+$orangeColor: #E37222;
+$orangeColor-alt: #EEAA7B;
+=======
+$mainColor: #FFC30B;
+$subColor: #7BB31A;
+$mainColor-alt: #FFD300;
+
+>>>>>>> 527a2ce (costomazation and some chnges)
+
+/* breakpointes */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

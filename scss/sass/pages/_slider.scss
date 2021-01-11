@@ -1,0 +1,84 @@
+.slider {
+   .carousel-inner {
+      position: relative;
+      .carousel-item{
+         height: 650px;
+         @include background-size(cover);
+         background-position: center;
+      }
+      .carousel-item-one {
+         background-image: url('../img/slider/slider-bg3.jpg');
+      }
+      .carousel-item-two {
+         background-image: url('../img/slider/slider-bg2.jpg');
+      }
+      .carousel-item-three {
+         background-image: url('../img/slider/slider-bg1.jpg');
+      }
+      .overlay {
+         .slider-text {
+            font-size: 2.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.5;
+            opacity: 0;
+            @include transform(translateX(-110%));
+            @include transition(all .8s ease-in-out);
+            span:first-child {
+<<<<<<< HEAD
+               color: $blueColor;
+            }
+            span:last-child {
+               background-color: $orangeColor;
+=======
+               color: $subColor;
+            }
+            span:last-child {
+               background-color: $mainColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+               padding: 0 0.5rem ;
+            }
+         }
+         .slider-btn {
+            border: 3px solid #fff;
+            opacity: 0;
+            @include transform(translateY(300px));
+            @include transition(transform 1s ease-in-out);
+            &:before {
+               background-color: #fff;
+            }
+            &:hover {
+               button {
+                  color: #000;
+               }
+            }
+         }
+<<<<<<< HEAD
+=======
+         .slider-img {
+            @include transform(translateX(140%));
+            @include transition(transform 1s ease-in-out);
+         }
+>>>>>>> 527a2ce (costomazation and some chnges)
+      }
+   }
+   .carousel-indicators {
+      li {
+         height: 15px;
+         width: 15px;
+         border-radius: 50%;
+      }
+   }
+}
+
+@include media-breakpoint-down(xs) {
+   .slider {
+      .carousel-inner {
+         .overlay {
+            .slider-text {
+               font-size: 1.8rem;
+            }
+         }
+      }
+   }
+}

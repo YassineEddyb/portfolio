@@ -1,0 +1,117 @@
+header {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   z-index: 999;
+   &.sticky {
+      background-color: #f8f8f8;
+      @include box-shadow(0 5px 20px rgba(0,0,0,0.3));
+      .mobile-menu i {
+         color: #444;
+      }
+      .navbar .navigator li a {
+         color: #444;
+      }
+   }
+   &.hide {
+      height: 0;
+      padding: 0;
+   }
+   .container {
+      position: relative;
+   }
+   .logo {
+      a {
+         span {
+            font-size: 1.7rem;
+<<<<<<< HEAD
+         }
+         span:first-child {
+            color: $blueColor;
+            font-weight: bold;
+         }
+         span:last-child {
+            color: $orangeColor;
+=======
+            color: $mainColor;
+            font-weight: bold;
+            span {
+               font-size: 1.1rem;
+               color: $subColor;
+            }
+>>>>>>> 527a2ce (costomazation and some chnges)
+         }
+      }
+   }
+   .navbar {
+      display: none;
+      padding: 0;
+      .navigator {
+         padding-left: 0 !important;
+         li {
+            margin-right: 1.5rem;
+            padding: 0.5rem;
+            a {
+               display: block;
+               color: #fff;
+               font-size: 1rem;
+               font-weight: 500;
+               position: relative;
+               &:before {
+                  content: "";
+                  position: absolute;
+                  display: inline-block;
+                  bottom: -7px;
+                  left: 0;
+                  height: 4px;
+                  width: 0;
+<<<<<<< HEAD
+                  background-color: $orangeColor;
+=======
+                  background-color: $subColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+                  @include transition((width .3s ease-in-out, color .3s ease-in-out));
+               }
+            }
+            .mobile.active, .mobile:hover {
+<<<<<<< HEAD
+               color: $orangeColor;
+=======
+               color: $subColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+            }
+            .laptop.active:before,
+            .laptop:hover:before,
+            .laptop.active,
+            .laptop:hover{
+               width: 100%;
+<<<<<<< HEAD
+               color: $orangeColor;
+=======
+               color: $subColor;
+>>>>>>> 527a2ce (costomazation and some chnges)
+            }
+         }
+      }
+   }
+   .mobile-menu {
+      position: absolute;
+      bottom: 0.6rem;
+      top: 0.3rem;
+      right: 1rem;
+      i {
+         cursor: pointer;
+         color: #fff;
+      }
+   }
+}
+
+@include media-breakpoint-down(md) {
+   header .navbar {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding-left: 20px;
+      background-color: #f8f8f8;
+   }
+}
